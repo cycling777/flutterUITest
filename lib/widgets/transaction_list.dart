@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:test3/models/transaction.dart';
 
-class TransactjionList extends StatelessWidget {
+class TransactionList extends StatelessWidget {
   final List<Transaction> transactions;
 
-  TransactjionList(this.transactions);
+  TransactionList(this.transactions);
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class TransactjionList extends StatelessWidget {
                     Text(
                       transactions[index].title,
                       style:
-                      TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
                     Text(
                       DateFormat.yMMMd().format(transactions[index].date),
